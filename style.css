@@ -1,0 +1,12 @@
+canvas#canvas
+{
+  background-color: black;
+  border: 1px solid black;
+}
+button#btn
+{
+  border: none;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
