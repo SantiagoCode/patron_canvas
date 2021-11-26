@@ -4,15 +4,15 @@ var btn = document.getElementById('btn');
 
 var alto = canvas.height;
 var ancho = canvas.width;
-var paso = 30;
-var suiche = false;
+var suiche = true;
 
-
-var color = ["red", "#00ff00", "blue"];
-var x = [0, 10, 20];
+var color = ["blue", "red", "#00ff00"];
+var paso = 45;
+var x = [20, 35, 50];
 var y = 5;
 
 btn.addEventListener("click", patrones);
+
 
 
 function patrones()
@@ -26,28 +26,26 @@ function patrones()
 }
 
 
-
-
 function patron(color, x, y)
 {
 
   var x_inicial = x;
 
-  while(y < alto)
+  while (y < alto)
   {
 
-    if (x > ancho - 5)
+    if (x > ancho - 10)
     {
       // ajuste de linea x
       // cambio el switch
       if (suiche == true)
       {
-        x = x_inicial - 5;
+        x = x_inicial - 22.5;
         suiche = false;
       }
       else
       {
-        x = x_inicial - 15;
+        x = x_inicial;
         suiche = true;
       }
 
